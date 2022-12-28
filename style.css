@@ -1,0 +1,177 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Avenir Next Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    background-color: purple;
+    color: orange;
+    line-height: 0.9;
+    padding: 10px;
+    margin: 0px;
+}
+
+/*header*/
+header {
+display: flex;
+justify-content: center;
+text-align: center;
+font-size: 200%;
+color: inherit;
+}
+
+header h1:hover {
+    color: white;
+}
+
+/*grid*/
+    .container {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 768px;
+  }
+
+    .item {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .container svg {
+    fill: orange;
+    width: 200px;
+    height: auto;
+  }
+
+  .container svg:hover {
+    fill: white;
+  }
+
+/*modal*/
+
+.modal {
+    color: purple;
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    justify-content: center;
+    align-content: center;
+}
+
+.modal-content {
+    display: block;
+    background-color: orange;
+    margin: 15%;
+    padding: 40px;
+    width: 400px;
+    height: fit-content;
+    margin: auto;
+    border-radius: 30px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.modal-content svg {
+  fill: purple;
+  width: 200px;
+  height: auto;
+}
+
+.modal-content  audio {
+  border-radius: 30px;
+  background-color: purple;
+  margin-bottom: 20px;
+}
+
+
+.modal-content audio::-webkit-media-controls-panel {
+  background-color: purple;  
+}
+
+.modal-content .cat {
+font-size: small;
+font-weight: lighter;
+line-height: 0px;  
+}
+
+.modal-content .tag {
+  font-size: medium;
+  font-weight: bold;
+  margin-bottom: 30px;  
+  }
+
+.close {
+    position: fixed;
+    top: -5;
+    right: 10;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*footer*/
+
+.footer { 
+    padding:40px 15px ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+.contactos {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+ .contactos .icon {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        vertical-align: center;
+       }
+
+    .material-icons {
+        vertical-align: middle;
+        position: relative;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+/* Resposive*/
+@media (max-width: 600px) {
+  
+  .modal-content {
+    width: 70%;
+    height: fit-content;
+    overflow: scroll;
+}
+
+.modal-content  audio {
+  width: 80%;
+}
+
+}
