@@ -1,3 +1,8 @@
+:root {
+  --color1: #7bf759;
+  --color2: #200775;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,8 +10,8 @@ body {
     text-transform: uppercase;
     font-family: Avenir Next Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-color: purple;
-    color: orange;
+    background-color: var(--color2);
+    color: var(--color1);
     line-height: 0.9;
     padding: 10px;
     margin: 0px;
@@ -42,7 +47,7 @@ header h1:hover {
   }
 
   .container svg {
-    fill: orange;
+    fill: var(--color1);
     width: 200px;
     height: auto;
   }
@@ -54,7 +59,7 @@ header h1:hover {
 /*modal*/
 
 .modal {
-    color: purple;
+    color: var(--color2);
     display: none;
     position: fixed;
     left: 0;
@@ -62,14 +67,13 @@ header h1:hover {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-content: center;
 }
 
 .modal-content {
     display: block;
-    background-color: orange;
+    background-color: var(--color1);
     margin: 15%;
     padding: 40px;
     width: 400px;
@@ -82,20 +86,20 @@ header h1:hover {
 }
 
 .modal-content svg {
-  fill: purple;
+  fill: var(--color2);
   width: 200px;
   height: auto;
 }
 
 .modal-content  audio {
   border-radius: 30px;
-  background-color: purple;
+  background-color: var(--color2);
   margin-bottom: 20px;
 }
 
 
 .modal-content audio::-webkit-media-controls-panel {
-  background-color: purple;  
+  background-color: var(--color2);  
 }
 
 .modal-content .cat {
@@ -151,6 +155,7 @@ line-height: 0px;
         display: flex;
         flex-direction: row;
         vertical-align: center;
+        padding: 15px;
        }
 
     .material-icons {
@@ -159,6 +164,16 @@ line-height: 0px;
         margin-right: 10px;
         display: flex;
         flex-direction: row;
+    }
+
+   a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Avenir Next Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: var(--color1);
+    line-height: 0.9;
     }
 
 /* Resposive*/
