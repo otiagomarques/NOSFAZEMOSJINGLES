@@ -1,16 +1,9 @@
 // Color Scheme
 const colorSchemes = [
     { color1: "#7bf759", color2: "#200775"},
-    { color1: "#f972d7", color2: "#001bb2"},
-    { color1: "#ffe200", color2: "#198f4a"},
-    { color1: "#ff8a00", color2: "#520076"},
-    { color1: "#99ffba", color2: "#0079ff"},
-    { color1: "#40b37c", color2: "#d40000"},
-    { color1: "#d3ffff", color2: "#ff9500"},
-    { color1: "#bfffaa", color2: "#ff00f5"},
-    { color1: "#feff00", color2: "#0700c7"},
-    { color1: "#b2f4b8", color2: "#242331"},
-    { color1: "#f2ff00", color2: "#34c992"}
+    { color1: "#f972d7", color2: "#000D57"},
+    { color1: "#ff8a00", color2: "#35004C"},
+    { color1: "#ECEC64", color2: "#040071"}
   ];
   
   window.onload = function() {
