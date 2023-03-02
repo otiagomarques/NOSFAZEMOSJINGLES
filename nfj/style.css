@@ -1,3 +1,8 @@
+:root {
+  --color1: #7bf759;
+  --color2: #200775;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -5,8 +10,8 @@ body {
     text-transform: uppercase;
     font-family: Avenir Next Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    background-color: purple;
-    color: orange;
+    background-color: var(--color2);
+    color: var(--color1);
     line-height: 0.9;
     padding: 10px;
     margin: 0px;
@@ -28,9 +33,9 @@ header h1:hover {
 /*grid*/
     .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     padding: 10px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     max-width: 768px;
   }
@@ -39,10 +44,13 @@ header h1:hover {
     width: 200px;
     height: 200px;
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container svg {
-    fill: orange;
+    fill: var(--color1);
     width: 200px;
     height: auto;
   }
@@ -51,10 +59,22 @@ header h1:hover {
     fill: white;
   }
 
+  #btn7 svg {
+    width: 100px; 
+  }
+
+  #btn8 svg {
+    width: 140px; 
+  }
+
+  #btn9 svg {
+    width: 140px; 
+  }
+
 /*modal*/
 
 .modal {
-    color: purple;
+    color: var(--color2);
     display: none;
     position: fixed;
     left: 0;
@@ -62,40 +82,44 @@ header h1:hover {
     z-index: 1;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.4);
     justify-content: center;
     align-content: center;
 }
 
 .modal-content {
-    display: block;
-    background-color: orange;
-    margin: 15%;
-    padding: 40px;
-    width: 400px;
-    height: fit-content;
-    margin: auto;
-    border-radius: 30px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
+  position: relative;
+  display: block;
+  background-color: var(--color1);
+  margin: 15%;
+  padding: 40px;
+  width: 400px;
+  height: fit-content;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .modal-content svg {
-  fill: purple;
+  fill: var(--color2);
   width: 200px;
   height: auto;
 }
 
+.modal-logo2 {
+  padding-bottom: 20px;
+}
+
 .modal-content  audio {
   border-radius: 30px;
-  background-color: purple;
+  background-color: var(--color2);
   margin-bottom: 20px;
 }
 
 
 .modal-content audio::-webkit-media-controls-panel {
-  background-color: purple;  
+  background-color: var(--color2);  
 }
 
 .modal-content .cat {
@@ -111,9 +135,9 @@ line-height: 0px;
   }
 
 .close {
-    position: fixed;
-    top: -5;
-    right: 10;
+    position: absolute;
+    top: 25px;
+    right: 30px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -124,6 +148,7 @@ line-height: 0px;
   text-decoration: none;
   cursor: pointer;
 }
+
 
 /*footer*/
 
@@ -151,6 +176,7 @@ line-height: 0px;
         display: flex;
         flex-direction: row;
         vertical-align: center;
+        padding: 15px;
        }
 
     .material-icons {
@@ -160,6 +186,37 @@ line-height: 0px;
         display: flex;
         flex-direction: row;
     }
+
+   a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    font-size: larger;
+    text-transform: uppercase;
+    font-family: Avenir Next Condensed,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: var(--color1);
+    line-height: 0.9;
+    }
+
+  .briefing  {
+    text-align: center;
+    vertical-align: middle;
+    font-size: large;
+    border-radius: 30px;
+    padding: 15px;
+    color: var(--color2);
+    background-color: var(--color1);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .briefing:hover {
+    background-color: white;
+    }
+
+  .container-b {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 
 /* Resposive*/
 @media (max-width: 600px) {
